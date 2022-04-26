@@ -33,3 +33,16 @@ Qeta est une application web de question réponses pour les utilisateurs, tout l
 - Enfin vous pourrez faire un push dans votre branche master (ou main) avec la commande suivante *git push heroku master*
 
 - Et pour finir vous pouvez effectuer la dernière commande qui est *heroku open* qui vas vous permettre d'afficher le site.
+
+## La base de donées avec heroku
+
+- Pour alimenter votre site avec une base de données il faudra alors créer les différentes variable qui sont : 
+    - DB_CONNECTION
+    - DB_DATABASE
+    - DB_HOST
+    - DB_PASSWORD
+    - DB_PORT
+    - DB_USERNAME
+    Ainsi vous pouvez les créer directement dans le dashboard de Heroku après vous n'avez plus qu'a mettre vos valeurs
+
+- Bien entendu vous n'êtes en aucun cas obligé d'avoir votre base de donées hébergé sur Heroku
