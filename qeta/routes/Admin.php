@@ -1,6 +1,5 @@
 <?php
 
-
 use App\Models\User;
 use App\Models\Topic;
 use App\Models\Reaction;
