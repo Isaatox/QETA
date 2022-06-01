@@ -17,10 +17,10 @@ class CreateTopicsTable extends Migration
             $table->id(); 
             $table->integer('user_id');
             $table->string('type');
-            $table->string('tag');
+            $table->string('tag')->nullable();
             $table->string('title');
             $table->mediumText('description');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('setting');
             $table->timestamps();
         });

@@ -72,7 +72,7 @@ text-decoration: none;
                 <p>{{$nbquestion}}</p>
             </div>
             <div class="card-content-part">
-                <a href="/admin/question">Plus de détail </a>
+                <a href="{{route('admin.question')}}">Plus de détail </a>
             </div>
         </div>
         <div class="cpanel bg-warning">
@@ -101,8 +101,8 @@ text-decoration: none;
                 <small>Nombre de commentaire sur les questions</small>
                 <p>{{$nbcomquest}}</p>
             </div>
-            <div class="card-content-part">
-                <a href="#">Plus de détail </a>
+            <div class="card-content-part" style="cursor:cell">
+                <a href="" style="cursor:cell">Pas de détail </a>
             </div>
         </div>
         <div class="cpanel bg-info">
@@ -111,8 +111,8 @@ text-decoration: none;
                 <small>Nombre de commentaire sur les sondage</small>
                 <p>{{$nbcomsond}}</p>
             </div>
-            <div class="card-content-part">
-                <a href="#">Plus de détail </a>
+            <div class="card-content-part" style="cursor:cell">
+                <a href="" style="cursor:cell">Pas de détail </a>
             </div>
         </div>
     </div>

@@ -51,8 +51,8 @@ class AdminQuestionController extends Controller
     public function create(Request $request)
     {
         $request->validate([
-            'title' => ['required', 'string', 'max:2'],
-            // 'image' => ['required', 'string', 'max:255'],
+            'title' => ['required', 'string', 'max:255'],
+            'image' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
             'tag' => ['required', 'string', 'max:255'],
             'Radios' => ['required'],

@@ -220,8 +220,8 @@
                                     <div class="multisteps-form__content">
                                         <p>Ajouter une image (facultatif)</p>
                                         <div class="input-group mb-3">
-                                            <input type="file" class="form-control" name="image" id="image"
-                                                aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                                                <input class="multisteps-form__input form-control" type="text" name="image" id="image"
+                                                    placeholder="Lien de l'image ..." />
                                         </div>
                                         <div class="form-row mt-4">
                                             <div class="col-12 col-sm-6">

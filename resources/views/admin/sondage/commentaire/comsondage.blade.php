@@ -15,7 +15,7 @@
     <thead>
       <tr>
         <th scope="col">id</th>
-        <th scope="col">user_id</th>
+        <th scope="col">Pseudo</th>
         <th scope="col">Commentaire</th>
         <th scope="col">Créer le</th>
         <th scope="col">Action</th>

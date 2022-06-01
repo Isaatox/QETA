@@ -30,7 +30,7 @@ class QuestionController extends Controller
             'setting' => $request->Radios,
         ]);
         $topic->save();
-        return redirect('/');
+        return redirect('/question');
     }
     public function redirection()
     {

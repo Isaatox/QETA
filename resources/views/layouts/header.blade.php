@@ -29,12 +29,12 @@
         <li class="nav-item">
           <a class="nav-link text-light" href="/sondage">Sondages</a>
         </li>
-        <li class="nav-item">
+        {{-- <li class="nav-item">
           <a class="nav-link text-light" href="#">A propos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light" href="#">Contact</a>
-        </li>
+        </li> --}}
         <li class="nav-item">
           <a class="nav-link text-light" href="/profil">Profil</a>
         </li>

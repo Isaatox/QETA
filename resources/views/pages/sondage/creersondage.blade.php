@@ -240,14 +240,14 @@
                                             <input class="form-check-input" type="radio" name="Radios" id="public" value="0"
                                                 checked>
                                             <label class="form-check-label" for="public">
-                                                Mettre la question en public
+                                                Mettre le sondage en public
                                             </label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="Radios" id="priver"
                                                 value="1">
                                             <label class="form-check-label" for="priver">
-                                                Mettre la question en privé
+                                                Mettre le sondage en privé
                                             </label>
                                         </div>
                                         <div class="button-row d-flex mt-4">

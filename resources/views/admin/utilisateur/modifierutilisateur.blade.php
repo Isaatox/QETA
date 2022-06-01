@@ -12,7 +12,7 @@
     </style>
     <br>
     <div class="container mt-5">
-        <form action="{{ route('utilisateur.edit') }}" method="POST">
+        <form action="{{ route('admin.user.edit') }}" method="POST">
             @csrf
             <div class="form-group">
                 <input id="id" name="id" type="hidden" value="{{ $user->id }}">
@@ -46,6 +46,6 @@
             @error('Radios')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
     </div>

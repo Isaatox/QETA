@@ -15,7 +15,7 @@ body{
   <thead>
     <tr>
       <th scope="col">id</th>
-      <th scope="col">user_id</th>
+      <th scope="col">pseudo</th>
       <th scope="col">type</th>
       <th scope="col">tag</th>
       <th scope="col">title</th>
@@ -30,7 +30,7 @@ body{
       @foreach ($sondages as $sondage)
       <tr>
       <th scope="row">{{$sondage->id}}</th>
-      <td>{{$sondage->user_id}}</td>
+      <td>{{$sondage->User->pseudo}}</td>
       <td>{{$sondage->type}}</td>
       <th>{{$sondage->tag}}</th>
       <td>{{$sondage->title}}</td>

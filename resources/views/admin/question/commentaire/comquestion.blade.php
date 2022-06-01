@@ -15,9 +15,9 @@
     <thead>
       <tr>
         <th scope="col">id</th>
-        <th scope="col">user_id</th>
+        <th scope="col">pseudo</th>
         <th scope="col">Commentaire</th>
-        <th scope="col">Créer le</th>
+        <th scope="col">Créée le</th>
         <th scope="col">Action</th>
       </tr>
     </thead>
@@ -26,7 +26,7 @@
         @foreach ($commentaires as $commentaire)
         <tr>
         <th scope="row">{{$commentaire->id}}</th>
-        <td>{{$commentaire->user_id}}</td>
+        <td>{{$commentaire->User->pseudo}}</td>
         <td>{{$commentaire->content}}</td>
         <td>{{$commentaire->created_at}}</td>
         <td><a class="btn btn-danger" href="{{route('admin.question.commentaire.delete',['id'=>$commentaire->id])}}"><i class="fas fa-minus-circle"></i></a> 

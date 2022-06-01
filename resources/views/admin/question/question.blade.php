@@ -15,7 +15,7 @@ body{
   <thead>
     <tr>
       <th scope="col">id</th>
-      <th scope="col">user_id</th>
+      <th scope="col">Pseudo</th>
       <th scope="col">type</th>
       <th scope="col">tag</th>
       <th scope="col">title</th>
@@ -30,7 +30,7 @@ body{
       @foreach ($questions as $question)
       <tr>
       <th scope="row">{{$question->id}}</th>
-      <td>{{$question->user_id}}</td>
+      <td>{{$question->User->pseudo}}</td>
       <td>{{$question->type}}</td>
       <th>{{$question->tag}}</th>
       <td>{{$question->title}}</td>

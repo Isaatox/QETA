@@ -18,7 +18,7 @@
                             <ul class="dropdown-menu" style="background-color: #032353;" aria-labelledby="dropdownMenuButton1">
                                 <li><a href="/admin/question"><i class="far fa-question-circle"></i> <span class="item-text">Liste des questions</span></a></li>
                                 <li><a href="{{route('admin.sondage')}}"><i class="fas fa-poll-h"></i> <span class="item-text">Liste des sondages</span></a></li>
-                                <li><a href="#"><i class="fas fa-comments"></i> <span class="item-text">Liste des commentaires</span></a></li>
+                                {{-- <li><a href="#"><i class="fas fa-comments"></i> <span class="item-text">Liste des commentaires</span></a></li> --}}
                                 <li><a href="{{route('admin.report')}}"><i class="fas fa-exclamation-circle"></i> <span class="item-text">Signalement</span></a></li>
 
                             </ul>
@@ -28,7 +28,7 @@
                                 <i class="fas fa-user-edit"></i> <span> Utilisateurs</span>
                             </button>
                             <ul class="dropdown-menu" style="background-color: #032353;" aria-labelledby="dropdownMenuButton2">
-                                <li><a href="#"><i class="fas fa-users"></i> <span class="item-text">Liste des utilisateurs</span></a></li>
+                                <li><a href="{{route('admin.utilisateur')}}"><i class="fas fa-users"></i> <span class="item-text">Liste des utilisateurs</span></a></li>
                             </ul>
                         </div>
 
@@ -48,7 +48,7 @@
                     <span class="textnone">{{ auth()->user()->pseudo }}</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><button class="dropdown-item" type="button"><i class="bi bi-lock-fill"></i> Modifier Mot de passe</button></li>
+                    {{-- <li><button class="dropdown-item" type="button"><i class="bi bi-lock-fill"></i> Modifier Mot de passe</button></li> --}}
                     <li><hr class="dropdown-divider"></li>
                     <li><button class="dropdown-item" type="button" onclick="location.href='/admin/logout';"  ><i class="bi bi-box-arrow-right"></i> Se Déconnecter</button></li>
                 </ul>

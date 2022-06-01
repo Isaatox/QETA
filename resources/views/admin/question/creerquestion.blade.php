@@ -164,8 +164,8 @@
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Image</label>
                     <div class="input-group mb-3">
-                        <input type="file" class="form-control" name="image" id="image"
-                            aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                        <input class="multisteps-form__input form-control" type="text" name="image" id="image"
+                        placeholder="Lien image ..." />
                     </div>
                     @error('image')
                         <div class="alert alert-danger">{{ $message }}</div>

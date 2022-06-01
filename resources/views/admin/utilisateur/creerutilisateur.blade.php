@@ -144,7 +144,7 @@
                 <h1>Ajouter un utilisateur</h1>
             </center>
             <br>
-            <form action="{{ route('admin.add.user') }}" method="POST">
+            <form action="{{ route('admin.user.add') }}" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="formGroupExampleInput">Pseudo</label>
@@ -167,7 +167,7 @@
                 <div class="form-group">
                     <label for="formGroupExampleInput">Password</label>
 
-                    <input class="multisteps-form__input form-control" type="text" name="password" placeholder="Password ..."
+                    <input class="multisteps-form__input form-control" type="password" name="password" placeholder="Password ..."
                         required />
                 </div>
                 @error('password')
@@ -176,7 +176,7 @@
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Image</label>
                     <div class="input-group mb-3">
-                        <input type="file" class="form-control" name="image" id="image"
+                        <input type="text" class="form-control" name="image" id="image"
                             aria-describedby="inputGroupFileAddon03" aria-label="Upload">
                     </div>
                     @error('image')

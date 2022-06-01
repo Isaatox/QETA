@@ -16,7 +16,7 @@ body{
     <input type="hidden" name="id" value="{{$commentaires->id}}">
     <div class="form-group">
       <label for="User">Utilisateur :</label>
-      <input name="User" type="User" class="form-control" id="User" value="{{$commentaires->user_id}}" readonly>
+      <input name="User" type="User" class="form-control" id="User" value="{{$commentaires->User->pseudo}}" readonly>
     </div>
     <div class="form-group">
         <label for="exampleInputEmail1">Contenu</label>
@@ -29,6 +29,6 @@ body{
         <label for="exampleInputEmail1">Créer le :</label>
         <input name="image" type="text" class="form-control" id="exampleInputEmail1" value="{{$commentaires->created_at}}" readonly>
       </div>
-    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+    <button type="submit" class="btn btn-primary mt-2">Envoyer</button>
   </form>
 </div>

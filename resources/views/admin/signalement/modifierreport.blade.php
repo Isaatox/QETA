@@ -17,7 +17,7 @@
             <input type="hidden" name="update" value="{{ $report->updated_at }}">
             <div class="form-group">
                 <label for="User">Utilisateur qui a signalé :</label>
-                <input name="User" type="User" class="form-control" id="User" value="{{ $report->user_id }}" readonly>
+                <input name="User" type="User" class="form-control" id="User" value="{{ $report->User->pseudo }}" readonly>
             </div>
             <div class="form-group">
                 <label for="topic">Topic signalé :</label>

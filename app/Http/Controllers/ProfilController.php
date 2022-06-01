@@ -125,22 +125,5 @@ class ProfilController extends Controller
 
             return Redirect::to('profil')->with('success', 'Votre profil à bien été modifié !');
         }
-        // dump($checkMail);
-        // dump($checkPseudo);
-
-        // if ($checkUser) {
-        //     return back()->with('error', 'L\'email ou le Pseudo est déjà utilisé !');
-        // } else {
-        //     User::find($id)->update([
-        //         "pseudo" => $request->pseudo,
-        //         "email" => $request->email,
-        //         "image" => $request->image,
-        //         "website" => $request->website,
-        //         "github" => $request->github,
-        //         "twitter" => $request->twitter,
-        //     ]);
-
-        //     return Redirect::to('profil')->with('success', 'Votre profil à bien été modifié !');
-        // }
     }
 }

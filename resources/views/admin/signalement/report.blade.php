@@ -26,7 +26,7 @@ body{
         <tbody>
             @foreach ($reports as $report)
             <tr>
-                <td>{{$report->user_id}}</td>
+                <td>{{$report->User->pseudo}}</td>
                 @if ($report->response_id!=0)
                     <td>Commentaire</td>
                 @else

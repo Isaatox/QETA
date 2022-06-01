@@ -47,7 +47,7 @@
                             <h5 class="card-title">{{ $sondages->title }}</h5>
                             <p class="card-text">{{ $sondages->description }}</p>
                             <p class="card-text"><small class="text-muted">{{ $sondages->tag }}</small></p>
-                            <p class="card-text"><small class="text-muted">Last Update</small></p>
+                            <p class="card-text"><small class="text-muted">{{ $sondages->updated_at }}</small></p>
                         </div>
                         <div class='text-center mb-3'>
                             <img class="img-thumbnail" src="{{ $sondages->image }}" alt="Card image cap"
@@ -56,8 +56,7 @@
                     </div>
                 </div>
                 <div class="container">
-
-                    <div class="card mt-3">
+                    <div class="card mt-1">
                         <div class='card-header'>
                             <h5 class="card-title">Ajouter une réponse</h5>
                         </div>
@@ -74,7 +73,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="card mt-3">
+                    <div class="card mt-1 mb-5">
                         <div class="card-header">
                             <label for="message" class="h4 ">Réponse</label>
                         </div>
@@ -96,7 +95,6 @@
         </div>
 
     </div>
-
 
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -174,7 +172,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" name="exampleModalLabel" id="exampleModalLabel">Signaler le commentaire de
-                        :<input class="input-group-text w-25" type="text" name="userId" id="userId" value="cacca">
+                        : {{ $sondages->User->pseudo }}
                     </h5>
                     <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
                         <i class="fas fa-times"></i>
@@ -189,7 +187,7 @@
                         <input type="hidden" name="topId" id="topId" value="{{ $sondages->id }}">
                         <div class="form-group">
                             <label for="message-text" class="col-form-label">Titre :</label>
-                            <input type="text" class="form-conrtol" name="title" id="title" readonly="readonly"
+                            <input type="text" class="form-control" name="title" id="title" readonly="readonly"
                                 value="Commentaire">
                         </div>
                         <div class="form-group">
