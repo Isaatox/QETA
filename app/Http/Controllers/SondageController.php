@@ -14,7 +14,7 @@ class SondageController extends Controller
 
         $request->validate([
             'title' => ['required', 'string', 'max:255'],
-            'image' => ['required', 'string', 'max:255'],
+            // 'image' => ['string'],
             'description' => ['required', 'string'],
             'tag' => ['required', 'string', 'max:255'],
             'Radios' => ['required'],
