@@ -24,11 +24,11 @@ class Controller extends BaseController
         $nbutilisateur = User::count();
 
         $lastsondage = Topic::latest('id')
-            ->where('type','=', 0)
+            ->where('type', '=', 0)
             ->first();
 
         $lastquestion = Topic::latest('id')
-            ->where('type','=', 1)
+            ->where('type', '=', 1)
             ->first();
 
         return view('dashboard', [
@@ -38,5 +38,10 @@ class Controller extends BaseController
             'lastsondage' => $lastsondage,
             'lastquestion' => $lastquestion,
         ]);
+    }
+
+    public function cgu()
+    {
+        return view('cgu', []);
     }
 }

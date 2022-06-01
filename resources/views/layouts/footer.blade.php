@@ -63,6 +63,6 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2022 Copyright:
-      <a class="text-white" href="#">Q&A</a>
+      <a class="text-white" href="/cgu">Q&A</a>
     </div>
   </footer>

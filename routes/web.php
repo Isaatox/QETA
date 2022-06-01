@@ -34,6 +34,8 @@ use App\Http\Controllers\AuthAdmin\AuthenticatedSessionController;
 Route::get('/', [Controller::class, 'show'])
         ->middleware('auth');
 
+Route::get('/cgu', [Controller::class, 'cgu']);
+
 Route::get('profil', [ProfilController::class, 'show'])
         ->middleware('auth');
 
@@ -45,7 +47,7 @@ Route::post('/profile/edit', [ProfilController::class, 'edit'])
         ->name('profile.edit')
         ->middleware('auth');
 
-Route::get('/question/view',  [QuestionController::class, 'redirection']) 
+Route::get('/question/view',  [QuestionController::class, 'redirection'])
         ->name('question.view')
         ->middleware('auth');
 
@@ -53,11 +55,11 @@ Route::post('/question/add', [QuestionController::class, 'create'])
         ->name('question.add')
         ->middleware('auth');
 
-Route::get('/question',[QuestionController::class, 'show'])
+Route::get('/question', [QuestionController::class, 'show'])
         ->name('question')
         ->middleware('auth');
 
-Route::get('/question/read/{id}',[QuestionController::class, 'showone'])
+Route::get('/question/read/{id}', [QuestionController::class, 'showone'])
         ->middleware('auth')
         ->name('question.read');
 
@@ -65,7 +67,7 @@ Route::get('/sondage/view', [SondageController::class, 'redirection'])
         ->name('sondage.view')
         ->middleware('auth');
 
-Route::post('/sondage/add', [SondageController::class, 'create']) 
+Route::post('/sondage/add', [SondageController::class, 'create'])
         ->name('sondage.add')
         ->middleware('auth');
 
@@ -74,12 +76,12 @@ Route::get('/sondage', [SondageController::class, 'show'])
         ->middleware('auth');
 
 Route::get('/sondage/read/{id}', [SondageController::class, 'showone'])
-    ->name('sondage.read')
-    ->middleware('auth');
+        ->name('sondage.read')
+        ->middleware('auth');
 
 Route::post('/response/add', [ReponseController::class, 'create'])
-    ->name('response.add')
-    ->middleware('auth');
+        ->name('response.add')
+        ->middleware('auth');
 
 Route::post('/report/add', [ReportController::class, 'createreportresponse'])
         ->name('report.add')
@@ -89,6 +91,6 @@ Route::post('/report/add/topic', [ReportController::class, 'createreport'])
         ->name('report.add.topic')
         ->middleware('auth');
 
-require __DIR__.'/admin.php';
+require __DIR__ . '/admin.php';
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
